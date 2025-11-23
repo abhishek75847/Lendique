@@ -1,0 +1,69 @@
+{
+  "abi": [
+    {
+      "type": "function",
+      "name": "getSupplyRate",
+      "inputs": [
+        { "name": "asset", "type": "address" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "get_supply_rate",
+      "inputs": [
+        { "name": "asset", "type": "address" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getBorrowRate",
+      "inputs": [
+        { "name": "asset", "type": "address" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "get_borrow_rate",
+      "inputs": [
+        { "name": "asset", "type": "address" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getUtilizationRate",
+      "inputs": [
+        { "name": "asset", "type": "address" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "get_utilization_rate",
+      "inputs": [
+        { "name": "asset", "type": "address" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "calculateInterest",
+      "inputs": [
+        { "name": "principal", "type": "uint256" },
+        { "name": "rate", "type": "uint256" },
+        { "name": "time", "type": "uint256" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256" }],
+      "stateMutability": "pure"
+    }
+  ]
+}

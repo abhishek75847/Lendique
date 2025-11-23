@@ -1,0 +1,121 @@
+{
+  "abi": [
+    {
+      "type": "function",
+      "name": "init",
+      "inputs": [{ "name": "gas_limit", "type": "uint256" }],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "store_model_weights",
+      "inputs": [
+        { "name": "model_id", "type": "uint256" },
+        { "name": "weights", "type": "int64[]" }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "storeModelWeights",
+      "inputs": [
+        { "name": "model_id", "type": "uint256" },
+        { "name": "weights", "type": "int64[]" }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "vector_dot_product",
+      "inputs": [
+        { "name": "model_id", "type": "uint256" },
+        { "name": "input", "type": "int64[]" }
+      ],
+      "outputs": [{ "name": "", "type": "int64" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "vectorDotProduct",
+      "inputs": [
+        { "name": "model_id", "type": "uint256" },
+        { "name": "input", "type": "int64[]" }
+      ],
+      "outputs": [{ "name": "", "type": "int64" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "run_simple_inference",
+      "inputs": [
+        { "name": "model_id", "type": "uint256" },
+        { "name": "input", "type": "int64[]" }
+      ],
+      "outputs": [{ "name": "", "type": "int64" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "runSimpleInference",
+      "inputs": [
+        { "name": "model_id", "type": "uint256" },
+        { "name": "input", "type": "int64[]" }
+      ],
+      "outputs": [{ "name": "", "type": "int64" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "batch_inference",
+      "inputs": [
+        { "name": "model_id", "type": "uint256" },
+        { "name": "inputs", "type": "int64[][]" }
+      ],
+      "outputs": [{ "name": "", "type": "int64[]" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "batchInference",
+      "inputs": [
+        { "name": "model_id", "type": "uint256" },
+        { "name": "inputs", "type": "int64[][]" }
+      ],
+      "outputs": [{ "name": "", "type": "int64[]" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "get_model_count",
+      "inputs": [],
+      "outputs": [{ "name": "", "type": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getModelCount",
+      "inputs": [],
+      "outputs": [{ "name": "", "type": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "event",
+      "name": "ModelWeightsStored",
+      "inputs": [
+        { "name": "model_id", "type": "uint256", "indexed": true },
+        { "name": "weight_count", "type": "uint256", "indexed": false }
+      ]
+    },
+    {
+      "type": "event",
+      "name": "InferenceExecuted",
+      "inputs": [
+        { "name": "model_id", "type": "uint256", "indexed": true },
+        { "name": "result", "type": "int256", "indexed": false }
+      ]
+    }
+  ]
+}

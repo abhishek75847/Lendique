@@ -1,0 +1,125 @@
+{
+  "abi": [
+    {
+      "type": "function",
+      "name": "init",
+      "inputs": [
+        { "name": "threshold", "type": "uint256" },
+        { "name": "cooldown", "type": "uint256" }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "set_target_allocation",
+      "inputs": [
+        { "name": "asset", "type": "address" },
+        { "name": "allocation", "type": "uint256" }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "setTargetAllocation",
+      "inputs": [
+        { "name": "asset", "type": "address" },
+        { "name": "allocation", "type": "uint256" }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "execute_rebalance",
+      "inputs": [
+        { "name": "from_asset", "type": "address" },
+        { "name": "to_asset", "type": "address" },
+        { "name": "amount", "type": "uint256" }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "executeRebalance",
+      "inputs": [
+        { "name": "from_asset", "type": "address" },
+        { "name": "to_asset", "type": "address" },
+        { "name": "amount", "type": "uint256" }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "optimize_for_volatility",
+      "inputs": [
+        { "name": "assets", "type": "address[]" },
+        { "name": "volatilities", "type": "uint256[]" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256[]" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "optimizeForVolatility",
+      "inputs": [
+        { "name": "assets", "type": "address[]" },
+        { "name": "volatilities", "type": "uint256[]" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256[]" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "optimize_for_apy",
+      "inputs": [
+        { "name": "assets", "type": "address[]" },
+        { "name": "apys", "type": "uint256[]" },
+        { "name": "risk_tolerance", "type": "uint256" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256[]" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "optimizeForApy",
+      "inputs": [
+        { "name": "assets", "type": "address[]" },
+        { "name": "apys", "type": "uint256[]" },
+        { "name": "risk_tolerance", "type": "uint256" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256[]" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "get_target_allocation",
+      "inputs": [
+        { "name": "user", "type": "address" },
+        { "name": "asset", "type": "address" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "get_total_rebalances",
+      "inputs": [],
+      "outputs": [{ "name": "", "type": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "event",
+      "name": "RebalanceExecuted",
+      "inputs": [
+        { "name": "user", "type": "address", "indexed": true },
+        { "name": "from_asset", "type": "address", "indexed": false },
+        { "name": "to_asset", "type": "address", "indexed": false },
+        { "name": "amount", "type": "uint256", "indexed": false }
+      ]
+    }
+  ]
+}

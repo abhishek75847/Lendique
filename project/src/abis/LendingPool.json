@@ -1,0 +1,178 @@
+{
+  "abi": [
+    {
+      "type": "function",
+      "name": "supply",
+      "inputs": [
+        { "name": "asset", "type": "address" },
+        { "name": "amount", "type": "uint256" }
+      ],
+      "outputs": [],
+      "stateMutability": "payable"
+    },
+    {
+      "type": "function",
+      "name": "borrow",
+      "inputs": [
+        { "name": "asset", "type": "address" },
+        { "name": "amount", "type": "uint256" }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "repay",
+      "inputs": [
+        { "name": "asset", "type": "address" },
+        { "name": "amount", "type": "uint256" }
+      ],
+      "outputs": [],
+      "stateMutability": "payable"
+    },
+    {
+      "type": "function",
+      "name": "withdraw",
+      "inputs": [
+        { "name": "asset", "type": "address" },
+        { "name": "amount", "type": "uint256" }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "getUserSupplyBalance",
+      "inputs": [
+        { "name": "user", "type": "address" },
+        { "name": "asset", "type": "address" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "get_user_supply_balance",
+      "inputs": [
+        { "name": "user", "type": "address" },
+        { "name": "asset", "type": "address" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getUserBorrowBalance",
+      "inputs": [
+        { "name": "user", "type": "address" },
+        { "name": "asset", "type": "address" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "get_user_borrow_balance",
+      "inputs": [
+        { "name": "user", "type": "address" },
+        { "name": "asset", "type": "address" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getTotalSupplied",
+      "inputs": [
+        { "name": "asset", "type": "address" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "get_total_supplied",
+      "inputs": [
+        { "name": "asset", "type": "address" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getTotalBorrowed",
+      "inputs": [
+        { "name": "asset", "type": "address" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "get_total_borrowed",
+      "inputs": [
+        { "name": "asset", "type": "address" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "get_utilization_rate",
+      "inputs": [
+        { "name": "asset", "type": "address" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "accrueInterest",
+      "inputs": [
+        { "name": "asset", "type": "address" }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "event",
+      "name": "Supply",
+      "inputs": [
+        { "name": "user", "type": "address", "indexed": true },
+        { "name": "asset", "type": "address", "indexed": true },
+        { "name": "amount", "type": "uint256", "indexed": false },
+        { "name": "timestamp", "type": "uint256", "indexed": false }
+      ]
+    },
+    {
+      "type": "event",
+      "name": "Borrow",
+      "inputs": [
+        { "name": "user", "type": "address", "indexed": true },
+        { "name": "asset", "type": "address", "indexed": true },
+        { "name": "amount", "type": "uint256", "indexed": false },
+        { "name": "timestamp", "type": "uint256", "indexed": false }
+      ]
+    },
+    {
+      "type": "event",
+      "name": "Repay",
+      "inputs": [
+        { "name": "user", "type": "address", "indexed": true },
+        { "name": "asset", "type": "address", "indexed": true },
+        { "name": "amount", "type": "uint256", "indexed": false },
+        { "name": "timestamp", "type": "uint256", "indexed": false }
+      ]
+    },
+    {
+      "type": "event",
+      "name": "Withdraw",
+      "inputs": [
+        { "name": "user", "type": "address", "indexed": true },
+        { "name": "asset", "type": "address", "indexed": true },
+        { "name": "amount", "type": "uint256", "indexed": false },
+        { "name": "timestamp", "type": "uint256", "indexed": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+ rustup default 1.81
+>> rustup target add wasm32-unknown-unknown --toolchain 1.81
+info: using existing install for '1.81-x86_64-pc-windows-msvc'
+info: default toolchain set to '1.81-x86_64-pc-windows-msvc'
+
+  1.81-x86_64-pc-windows-msvc unchanged - rustc 1.81.0 (eeb90cda1 2024-09-04)
+
+info: note that the toolchain '1.87.0-x86_64-pc-windows-msvc' is currently in use (overridden by 'C:\Users\abhis\Desktop\lendique\project\contracts\stylus\rust-toolchain.toml')
+info: component 'rust-std' for target 'wasm32-unknown-unknown' is up to date
+PS C:\Users\abhis\Desktop\lendique\project\contracts\stylus> cargo --version
+cargo 1.87.0 (99624be96 2025-05-06)

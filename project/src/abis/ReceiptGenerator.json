@@ -1,0 +1,152 @@
+{
+  "abi": [
+    {
+      "type": "function",
+      "name": "init",
+      "inputs": [
+        { "name": "bridge_address", "type": "address" }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "generate_receipt",
+      "inputs": [
+        { "name": "action", "type": "uint256" },
+        { "name": "amount", "type": "uint256" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256" }],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "generateReceipt",
+      "inputs": [
+        { "name": "action", "type": "uint256" },
+        { "name": "amount", "type": "uint256" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256" }],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "verify_receipt",
+      "inputs": [
+        { "name": "receipt_id", "type": "uint256" }
+      ],
+      "outputs": [{ "name": "", "type": "bool" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "verifyReceipt",
+      "inputs": [
+        { "name": "receipt_id", "type": "uint256" }
+      ],
+      "outputs": [{ "name": "", "type": "bool" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "get_receipt",
+      "inputs": [
+        { "name": "receipt_id", "type": "uint256" }
+      ],
+      "outputs": [
+        { "name": "user", "type": "address" },
+        { "name": "action", "type": "uint256" },
+        { "name": "amount", "type": "uint256" },
+        { "name": "timestamp", "type": "uint256" },
+        { "name": "proof_hash", "type": "bytes32" },
+        { "name": "submitted_to_l2", "type": "bool" }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getReceipt",
+      "inputs": [
+        { "name": "receipt_id", "type": "uint256" }
+      ],
+      "outputs": [
+        { "name": "user", "type": "address" },
+        { "name": "action", "type": "uint256" },
+        { "name": "amount", "type": "uint256" },
+        { "name": "timestamp", "type": "uint256" },
+        { "name": "proof_hash", "type": "bytes32" },
+        { "name": "submitted_to_l2", "type": "bool" }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "get_user_receipts",
+      "inputs": [
+        { "name": "user", "type": "address" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256[]" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getUserReceipts",
+      "inputs": [
+        { "name": "user", "type": "address" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256[]" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "get_receipt_count",
+      "inputs": [],
+      "outputs": [{ "name": "", "type": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getReceiptCount",
+      "inputs": [],
+      "outputs": [{ "name": "", "type": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "submit_to_l2",
+      "inputs": [
+        { "name": "receipt_id", "type": "uint256" }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "batch_submit_to_l2",
+      "inputs": [
+        { "name": "receipt_ids", "type": "uint256[]" }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "event",
+      "name": "ReceiptGenerated",
+      "inputs": [
+        { "name": "receipt_id", "type": "uint256", "indexed": true },
+        { "name": "user", "type": "address", "indexed": true },
+        { "name": "action", "type": "uint256", "indexed": false },
+        { "name": "amount", "type": "uint256", "indexed": false },
+        { "name": "proof_hash", "type": "bytes32", "indexed": false }
+      ]
+    },
+    {
+      "type": "event",
+      "name": "ReceiptSubmittedToL2",
+      "inputs": [
+        { "name": "receipt_id", "type": "uint256", "indexed": true },
+        { "name": "proof_hash", "type": "bytes32", "indexed": false }
+      ]
+    }
+  ]
+}
